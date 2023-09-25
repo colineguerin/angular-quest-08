@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-quest-08';
+
+  onomatopeiaList: string[] = [];
+
+  onReceiveNewOnomatopia(newOnomatopia: string): void {
+    this.onomatopeiaList.push(newOnomatopia);
+  }
 }
